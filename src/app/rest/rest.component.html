@@ -1,0 +1,84 @@
+<h1>Employee Dashboard</h1>
+<nav class="navbar">
+<input class="form-control" type="text"  [(ngModel)]="searchValue" (ngModelChange)="Search()" placeholder="Enter Value">
+</nav>
+<table class="table table-striped">
+    <thead>
+        <tr>
+           <th *ngFor="let key of tabKey" (click)="sort('id')">{{key}}&nbsp;<i class="fa fa-sort" aria-hidden="true"></i></th>
+        </tr>
+
+        <tr>
+            <th><input type="text" [(ngModel)]="id" (ngModelChange)="SearchId()" placeholder="Search by ID" /></th>
+            <th><input type="text" [(ngModel)]="firstName" (ngModelChange)="SearchFname()" placeholder="Search by FirstName" /></th>
+            <th><input type="text" [(ngModel)]="lastName" (ngModelChange)="SearchLname()"  placeholder="Search by LastName" /></th>
+            <th><input type="text" [(ngModel)]="email"  (ngModelChange)="Searchemail()" placeholder="Search by email" /></th>
+            <th><input type="text" [(ngModel)]="mobile" (ngModelChange)="Searchmobile()" placeholder="Search by mobile" /></th>
+            <th><input type="text" [(ngModel)]="salary" (ngModelChange)="Searchsalary()" placeholder="Search by salary" /></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let arr of tabValue | paginate:{itemsPerPage:5,currentPage:p};">
+            <td *ngFor="let val of arr ">{{val}}</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </tfoot>
+    
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h1>Employee Dashboard</h1>
+<nav class="navbar">
+<input class="form-control" type="text" name="firstName" [(ngModel)]="firstName" (ngModelChange)="Search()" placeholder="Enter Firstname">
+</nav>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th (click)="sort('id')">User Id &nbsp;<i class="fa fa-sort" aria-hidden="true"></i></th>
+            <th (click)="sort('firstName')">First Name &nbsp;<i class="fa fa-sort" aria-hidden="true"></i></th>
+            <th (click)="sort('lastName')">Last Name &nbsp;<i class="fa fa-sort" aria-hidden="true"></i></th>
+            <th (click)="sort('email')">Email &nbsp;<i class="fa fa-sort" aria-hidden="true"></i></th>
+            <th (click)="sort('mobile')">Mobile &nbsp;<i class="fa fa-sort" aria-hidden="true"></i></th>
+            <th (click)="sort('salary')">Salary &nbsp;<i class="fa fa-sort" aria-hidden="true"></i></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users | orderBy: key: reverse | paginate:{itemsPerPage:5, currentPage:p};">
+            <td>{{user.id}}</td>
+            <td>{{user.firstName}}</td>
+            <td>{{user.lastName}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.mobile}}</td>
+            <td>{{user.salary}}</td>
+
+        </tr>
+    </tbody>
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+
+</table> -->

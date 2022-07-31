@@ -1,0 +1,62 @@
+{
+  "Users": [
+    {
+      "id": 1,
+      "firstName": "Richard Tirtho",
+      "lastName": "Biswas",
+      "email":"richardtirtho5@gmail.com",
+      "mobile":"01787772725",
+      "salary":"15000"
+    },
+    {
+      "id": 2,
+      "firstName": "Sara Tanha",
+      "lastName": "Khan",
+      "email":"richardtirtho5@gmail.com",
+      "mobile":"01787772725",
+      "salary":"15000"
+    },
+    {
+      "id": 3,
+      "firstName": "Tahmid",
+      "lastName": "Hasan",
+      "email":"richardtirtho5@gmail.com",
+      "mobile":"01787772725",
+      "salary":"15000"
+    },
+    {
+      "id": 4,
+      "firstName": "Rahat",
+      "lastName": "Ahmed",
+      "email":"richardtirtho5@gmail.com",
+      "mobile":"01787772725",
+      "salary":"15000"
+    },
+    {
+      "id": 5,
+      "firstName": "Elisa",
+      "lastName": "Traee",
+      "email":"richardtirtho5@gmail.com",
+      "mobile":"01787772725",
+      "salary":"15000"
+    },
+    {
+      "id": 6,
+      "firstName": "Emily",
+      "lastName": "Tropa",
+      "email":"richardtirtho5@gmail.com",
+      "mobile":"01787772725",
+      "salary":"15000"
+    },
+    {
+      "id": 7,
+      "firstName": "Niher",
+      "lastName": "Bisawas",
+      "email":"richardtirtho5@gmail.com",
+      "mobile":"01787772725",
+      "salary":"15000"
+    }
+
+  ]
+  
+}
